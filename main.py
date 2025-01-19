@@ -7,6 +7,7 @@ root.title("Clock")
 
 def present_time():
     display_time = time.strftime("%I:%M:%S %p")
+    #display_time = time.strftime("%H:%M:%S %p") %H is for 24hr format
     digi_clock.config(text=display_time)
     digi_clock.after(200,present_time)
 
